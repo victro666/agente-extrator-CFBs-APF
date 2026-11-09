@@ -1,0 +1,313 @@
+PROJETO DE GOVERNANÇA ELETRÔNICA EM MODO DE MISSÃO (MMP)
+
+REDE E SISTEMAS DE RASTREAMENTO DE CRIMES E CRIMINOSOS
+
+(CCTNS)
+
+ESPECIFICAÇÃO DE REQUISITOS FUNCIONAIS V1.0
+
+(RASCUNHO)
+
+MINISTÉRIO DO INTERIOR DO GOVERNO DA ÍNDIA
+
+ÍNDICE N.º  CONTEÚDO
+
+1.  INTRODUÇÃO 2.  VISÃO GERAL FUNCIONAL
+
+3.  DESCRIÇÃO DOS MÓDULOS E REQUISITOS FUNCIONAIS 4.  REQUISITOS NÃO FUNCIONAIS
+
+5.  RECOMENDAÇÕES DE ARQUITETURA FUNCIONAL A1  REGISTRO
+
+A2  INVESTIGAÇÃO A3  ACUSAÇÃO
+
+A4  BUSCA A5  MÓDULO DE INTERFACE COM O CIDADÃO
+
+A6  MÓDULO DE NAVEGAÇÃO A7  MÓDULO DE CONFIGURAÇÃO
+
+1. INTRODUÇÃO    O relatório de Especificações de Requisitos Funcionais (FRS) fornece a descrição detalhada das funcionalidades necessárias para a primeira versão do CCTNS. O princípio orientador fundamental
+
+por trás do projeto funcional do CCTNS V1.0 é concentrar-se nas funcionalidades essenciais que agregam valor ao pessoal policial na linha de frente, o que, por sua vez, pode melhorar os
+
+resultados nas áreas de “Investigação de Crimes” e “Detecção de Criminosos”.
+2. VISÃO GERAL FUNCIONAL    A funcionalidade do CCTNS V1.0 foi projetada para se concentrar em agregar valor aos investigadores (IOs), à equipe da sala de registros e aos cidadãos no âmbito mais amplo da investigação criminal. Com base nos princípios orientadores
+
+mencionados acima, foram identificados nove blocos funcionais diferentes, e a funcionalidade detalhada de cada bloco foi definida.
+3. DESCRIÇÃO DOS MÓDULOS E REQUISITOS FUNCIONAIS    A funcionalidade do aplicativo CCTNS está voltada para agregar valor ao pessoal policial, especialmente aos policiais que atuam na linha de frente, e facilitar as operações diárias
+
+da função policial.
+
+Registro Os cidadãos podem registrar suas queixas junto à polícia e, com base nas evidências, nos fatos e
+
+na investigação subsequente, a polícia dará andamento à queixa. O módulo de Registro atua como uma interface entre a polícia e os cidadãos e facilita o contato, a interação e
+
+a troca de informações entre a polícia e os reclamantes.
+
+Investigação Após o registro de uma queixa, a polícia inicia o processo de investigação. O módulo de Investigação
+
+do CCTNS facilita o processo de investigação e introduz eficiências operacionais ao automatizar a maioria das tarefas que ocorrem após o preenchimento dos dados iniciais
+
+durante o Registro.
+
+Ação Penal A interação com os tribunais durante a ação penal dos casos é parte integrante das
+
+responsabilidades do pessoal policial. Um policial designado de cada delegacia mantém contato constante com os tribunais. O módulo de Ação Penal do CCTNS auxilia nessa
+
+interação, fornecendo uma plataforma para registrar as interações com os tribunais.
+
+Pesquisa O módulo de Pesquisa do CCTNS oferece ao pessoal policial a capacidade de realizar uma pesquisa básica ou
+
+avançada sobre casos. Utilizando a funcionalidade de pesquisa, o pessoal policial pode procurar por uma pessoa específica, tipo de crime, modus operandi, bens etc. Ele também oferece ao usuário a
+
+possibilidade de personalizar a exibição dos resultados por criminoso/réu ou por processos. Facilita a elaboração de relatórios pela polícia, permitindo que ela execute diferentes tipos de consultas, como relatórios mensais,
+
+relacionados à Lei de Direito à Informação (RTI), etc.
+
+Interface do Cidadão O módulo de Interface do Cidadão do CCTNS atua como um canal para a troca de informações
+
+entre cidadãos e unidades/agentes da polícia. Os cidadãos podem utilizá-la como ferramenta para obter informações ou confirmações da polícia. A polícia, por sua vez, pode utilizá-la para responder aos cidadãos com
+
+tempo de resposta muito curto. Isso melhora a produtividade geral, ajudando cidadãos e polícia a reduzir o trabalho pesado envolvido em grandes quantidades de papelada.
+
+Navegação O módulo de Navegação do CCTNS oferece páginas iniciais baseadas em funções, que auxiliam na
+
+navegação pelo aplicativo CCTNS. Ele exibe informações como casos atribuídos,
+
+alertas, tarefas pendentes etc., ajudando assim o pessoal policial a planejar melhor e executar com maior eficiência.
+
+Configuração do Aplicativo O módulo de Configuração do CCTNS ajuda a manter o aplicativo configurado de acordo
+
+com os requisitos dos estados, além de manter os elementos de dados e regras atualizados. Com uma configuração adequada, informações como leis e artigos, dados específicos de cada estado, castas, tribos,
+
+informações sobre propriedades etc. podem ser criadas, atualizadas e excluídas.
+
+Os requisitos funcionais para cada um dos módulos são apresentados como A1 a A7 em anexos separados.
+4. REQUISITOS NÃO FUNCIONAIS    Os requisitos não funcionais especificam os atributos qualitativos, como facilidade de uso e desempenho do sistema, que são essenciais para aumentar a aceitação do aplicativo pelos usuários.
+
+Módulo de Ajuda
+1.   A solução deve fornecer material de ajuda detalhado e sensível ao contexto para todas as  ações e cenários possíveis em todas as interfaces de usuário do aplicativo.
+2.   A ajuda deve estar acessível aos usuários tanto no modo offline quanto no modo online Módulo de Suporte
+1.   A solução deve fornecer uma interface para que o usuário registre quaisquer defeitos ou  solicitações de aprimoramento no aplicativo e acompanhe o andamento posteriormente.
+2.   A solução deve enviar alertas (por exemplo, e-mail, SMS) ao usuário, caso ele opte por recebê-los, sempre que alguma ação for realizada em relação ao alerta
+3.   A solução deve permitir que o usuário acompanhe o defeito ou a solicitação de aprimoramento enviado(a).
+4.   A solução deve permitir que o usuário do help desk visualize os relatórios sobre os  defeitos ou solicitações de melhorias enviados, organizados por categoria, status e tempo de existência.
+5.   A solução de suporte deve estar acessível aos usuários tanto de dentro do  aplicativo quanto de fora dele, por meio de uma interface de navegador.
+
+Módulo de Auditoria
+1. Uma trilha de auditoria é um registro das ações realizadas pelo usuário ou acionadas pelo sistema. Isso inclui ações realizadas por usuários ou administradores, ou ações iniciadas automaticamente pelo sistema como resultado de parâmetros do sistema. O sistema deve manter uma trilha de auditoria inalterável, capaz de capturar e armazenar automaticamente informações sobre:
+
+• Todas as ações (criar/ler/atualizar/excluir) realizadas sobre as entidades críticas (caso, suspeito, bem, etc.) no sistema • O usuário que inicia e/ou executa a ação;
+
+• A data e a hora do evento.
+
+• Parâmetros administrativos. A palavra “inalterável” significa que os dados da trilha de auditoria não podem ser modificados de forma alguma nem excluídos por nenhum usuário; eles podem ser transferidos para outro departamento e copiados para mídia removível, se necessário, desde que seu conteúdo permaneça inalterado.
+2.   Uma vez ativada a funcionalidade de trilha de auditoria, o Sistema deve rastrear  os eventos sem intervenção manual e armazenar na trilha de auditoria as informações  relativas a eles.
+3.   O Sistema deve manter a trilha de auditoria pelo tempo que for necessário, o que será, no  mínimo, durante toda a duração do caso ao qual ela se refere.
+4. O Sistema deve garantir que os dados da trilha de auditoria estejam disponíveis para inspeção mediante solicitação, de modo que um evento específico possa ser identificado e todos os dados relacionados tornados acessíveis, e que isso possa ser realizado por pessoal externo autorizado que tenha pouca ou nenhuma familiaridade com o sistema.
+5.   O sistema deve ser capaz de exportar trilhas de auditoria para casos específicos (sem  afetar a trilha de auditoria armazenada pelo sistema). Essa funcionalidade pode ser utilizada por  auditores externos que desejem examinar ou analisar a atividade do sistema.
+6.   O Sistema deve ser capaz de capturar e armazenar violações (ou seja, tentativas de um usuário de acessar um caso ao qual lhe foi negado acesso) e (nos casos em que as violações possam ser validamente tentadas) tentativas de violação dos mecanismos de controle de acesso.
+7. O sistema deve, no mínimo, ser capaz de fornecer relatórios sobre as ações em casos organizados:
+
+• Por caso;
+
+• Por usuário;
+
+• Em ordem cronológica.
+8.   O sistema deve ser capaz de fornecer relatórios sobre as ações em casos organizados por estação de trabalho e (quando tecnicamente apropriado) por endereço de rede.
+
+Os requisitos especificam as exigências para controlar o acesso do usuário a correspondências,
+
+arquivos e registros, bem como às diversas funcionalidades fornecidas pelo sistema.
+
+Módulo de Acesso
+1.   O sistema deve permitir que o usuário limite o acesso aos casos a usuários ou grupos de usuários especificados.
+2.   O sistema deve proporcionar um controle baseado em funções para as funcionalidades do sistema.
+3.   O sistema deve permitir que um usuário seja membro de mais de um grupo.
+4.   O sistema deve permitir que apenas usuários administradores configurem perfis de usuário e atribuam  usuários a grupos.
+5.   O sistema deve permitir que um usuário determine quais outros usuários ou grupos podem  acessar os casos.
+6.   O sistema deve permitir que alterações nos atributos de segurança de grupos ou usuários (tais  como direitos de acesso, nível de segurança, privilégios, atribuição e gerenciamento de senhas)  sejam feitas apenas por superusuários.
+7. Se um usuário solicitar acesso ou pesquisar um caso ao qual não tenha  direito de acesso, o sistema deve fornecer uma das seguintes respostas  (selecionáveis no momento da configuração):
+
+• exibir o título e os metadados;
+
+• indicar a existência de um caso, mas não seu título nem outros metadados;
+
+• não exibir nenhuma informação sobre o caso nem indicar sua existência de forma alguma.
+
+Essas opções são apresentadas em ordem crescente de segurança.  Observe que o requisito da terceira opção (ou seja, a mais rigorosa) implica que o Sistema não deve incluir tais processos em nenhuma contagem de resultados de pesquisa; esse nível de segurança é normalmente apropriado para processos que tratam de assuntos como segurança nacional.
+8.   Se um usuário realizar uma pesquisa rápida ou avançada, o Sistema nunca deve incluir na lista de resultados de pesquisa qualquer registro ao qual o usuário não tenha direito de acesso.
+9.   Se o Sistema permitir que os usuários façam tentativas não autorizadas de acesso aos processos, ele deve registrar essas tentativas na trilha de auditoria.
+10.   Qualquer acesso a processos, bem como todas as outras atividades envolvendo os processos e documentos ou dados relacionados, também devem ser armazenados na trilha de auditoria para garantir a admissibilidade jurídica e auxiliar na recuperação de dados.
+
+Facilidade de uso
+1. Todas as mensagens de erro geradas pelo Sistema devem ser significativas, de modo que possam ser  tratadas adequadamente pelos usuários que provavelmente as visualizarão. Idealmente, cada mensagem de erro  deverá ser acompanhada por um texto explicativo e uma indicação das ações que o usuário pode realizar em resposta ao erro.
+2. O sistema deve empregar um único conjunto de regras de interface de usuário, ou um pequeno número de conjuntos, para proporcionar uma aparência e um comportamento familiares e consistentes ao aplicativo.
+3. O sistema deve ser capaz de exibir várias entidades (casos, suspeitos) simultaneamente.
+4.  As interfaces devem ser personalizáveis ou configuráveis pelo usuário, na medida do possível. (por exemplo, as colunas exibidas na tabela, mover, redimensionar, modificar a aparência). Tais configurações devem ser salvas no perfil do usuário.
+5.  A interface de usuário do sistema deve ser adequada para usuários com necessidades especiais; ou seja,  compatível com softwares especializados que possam ser utilizados e com diretrizes de interface  apropriadas
+6.  O sistema deve fornecer funções para o usuário final e para o administrador que sejam fáceis de  usar e intuitivas em todos os aspectos.
+7. O sistema deve permitir padrões persistentes para a entrada de dados, quando desejável. Esses padrões devem incluir:
+
+• valores definíveis pelo usuário;
+
+• valores iguais aos do item anterior;
+
+• valores derivados do contexto, por exemplo, data, referência de arquivo, identificador do usuário;
+8.  As transações do Sistema executadas com frequência devem ser projetadas de modo que possam ser concluídas com um número reduzido de interações (por exemplo, cliques do mouse).
+9. Quando o Sistema empregar uma interface gráfica de usuário, ele deve permitir que os usuários a personalizem. A personalização deve incluir, mas não se limitar às seguintes  alterações:
+
+• conteúdo dos menus;
+
+• layout das telas;
+
+• uso de teclas de função;
+
+• cores, fontes e tamanhos de fonte na tela;
+
+Usabilidade
+1.   As interfaces de usuário devem ser projetadas de forma a torná-las intuitivas para o usuário.
+2.   As interfaces de usuário do sistema devem estar em conformidade com a Norma ISO 9241.
+3. Acessibilidade das TIC: a norma ISO 9241-20 será a referência para orientações sobre acessibilidade das TIC. As interfaces de usuário dos aplicativos devem atender aos seus requisitos e recomendações. Acessibilidade de software: a norma ISO 9241-171 deve ser a norma de referência para orientação sobre acessibilidade de software. As interfaces de usuário devem atender aos seus requisitos e recomendações. Acessibilidade de conteúdo: as WCAG 1.0 devem ser a norma utilizada para orientação sobre acessibilidade de conteúdo. O logotipo do aplicativo deve estar disponível em todas as páginas como um link para a página inicial.
+4.   Fornecimento de equivalentes textuais para objetos de mídia não textuais: Todos os objetos de mídia não textuais,  tais como imagens gráficas ou vídeos, devem ser acompanhados de descrições textuais equivalentes alternativas e/ou de funcionalidade equivalente baseada em texto.
+5.   Tornar a navegação autodescritiva: a navegação deve ser projetada para ajudar os usuários a compreender onde estão, por onde passaram e para onde podem ir em seguida. Orientações gerais sobre como alcançar a autodescritividade são fornecidas na norma ISO 9241-110.
+6. Mostrar aos usuários onde eles estão: Cada segmento de apresentação (página ou janela) deve fornecer ao usuário uma indicação clara e suficiente de onde ele ou ela está na estrutura de navegação e da posição atual do segmento em relação à estrutura geral.
+7.   Oferecer caminhos alternativos de acesso: Caminhos alternativos de acesso para navegar até uma  unidade específica de conteúdo devem ser oferecidos para dar suporte a diferentes estratégias de  navegação.
+8.   Minimizar o esforço de navegação: O número de etapas de navegação necessárias para chegar a um determinado conteúdo deve ser minimizado, desde que sejam levados em consideração os diferentes modelos mentais, estratégias de navegação e tarefas do usuário.
+9.   Telas iniciais devem ser evitadas, a menos que forneçam conteúdo útil ou feedback sobre o estado do aplicativo ao usuário. Se uma tela inicial for usada, deve-se oferecer uma opção de navegação para ignorá-la.
+10. Evitar a abertura de janelas desnecessárias: Janelas adicionais, como novas janelas do navegador ou janelas pop-up, só devem ser abertas se isso auxiliar na tarefa do usuário. A abertura de novas janelas pode distrair, confundir ou impedir os usuários por diversos motivos. Elas podem se sobrepor à janela principal, ocultando informações relevantes. Podem tornar cognitivamente mais difícil compreender a estrutura de navegação, com efeitos negativos tanto na usabilidade quanto na acessibilidade. Além disso, exigem ações adicionais do usuário para fechar janelas indesejadas.
+11.   A rolagem vertical deve ser minimizada. Isso pode ser feito colocando informações importantes na parte superior e fornecendo links para informações que se encontram mais abaixo na página. A rolagem horizontal deve ser evitada sempre que possível.
+12. Projeto para independência de dispositivos de entrada: as interfaces de usuário devem ser projetadas para  permitir a ativação de controles por meio de diversos dispositivos de entrada. A possibilidade de escolher  entre diferentes dispositivos de entrada para ativar controles, como links, campos e  botões, é importante tanto para usuários que preferem um determinado modo de entrada, quanto para usuários móveis  e usuários com deficiência. Em geral, a independência de dispositivos pode ser alcançada se a funcionalidade for operável por meio de um teclado.
+13.   Tornando as interfaces de usuário robustas: As interfaces de usuário devem ser projetadas para serem tão robustas quanto possível diante das mudanças tecnológicas. Isso inclui a capacidade de apresentar conteúdo que incorpore tecnologias mais recentes em agentes de usuário mais antigos, bem como projetar conteúdo para que seja utilizável com tecnologias futuras.
+14. Tempos aceitáveis de abertura/download: As páginas do aplicativo devem ser projetadas e implementadas de modo a garantir tempos aceitáveis de abertura e download para a gama esperada de contextos técnicos de uso (por exemplo, largura de banda entre o aplicativo e o usuário). Isso é particularmente importante para páginas acessadas com frequência ou páginas que são importantes para a navegação e exploração do usuário, como a página inicial.
+15.   Minimização de erros do usuário:  Os erros potenciais do usuário, bem como o esforço necessário para  recuperar-se desses erros, devem ser minimizados.
+16. Fornecimento de mensagens de erro claras: O conteúdo das mensagens de erro exibidas nas páginas ou em páginas especiais de erro deve indicar claramente o motivo pelo qual o erro ocorreu e, se possível, as ações que o usuário pode realizar para resolver o erro. Os usuários esperam que as mensagens de erro estejam no mesmo idioma da interface do usuário.
+17. Uso de formatos, unidades de medida ou moedas apropriadas: Ao projetar interfaces de usuário para uso por grupos diversos, a entrada e a saída de elementos de informação, como moedas, unidades de medida, temperaturas, data e hora, números de telefone, endereços ou códigos postais, devem ser projetadas de forma a serem utilizáveis.
+18.   Permitir que o usuário altere o tamanho do texto: O texto deve poder ter seu tamanho alterado pelo usuário,  usando funções fornecidas pelo agente do usuário ou outros meios apropriados; consulte a norma ISO  9241-171.
+19.   Qualidade do texto: A qualidade do conteúdo textual no que diz respeito à ortografia e à gramática deve ser suficiente para não prejudicar a legibilidade.
+20. Estilo de redação: A leitura e a compreensão do conteúdo textual na tela devem ser facilitadas por meios adequados, incluindo o uso de frases curtas, a divisão do texto em trechos mais curtos ou a apresentação de itens de conteúdo na forma de marcadores.
+21.   Facilitação da leitura rápida: A leitura rápida do texto deve ser facilitada pelo fornecimento de links claros, listas com marcadores, palavras-chave destacadas, títulos lógicos e frases curtas.
+22.   Legibilidade do texto: O texto apresentado nas páginas deve ser legível, levando em  consideração as características de exibição esperadas e o arranjo espacial. A norma ISO 9241-303  deve ser consultada para os requisitos de legibilidade do texto na tela.
+23.   Links internos distinguíveis: Os links internos devem ser claramente  distinguíveis de outros links que levam a uma página diferente. EX. Os links dentro da mesma página são exibidos com sublinhados tracejados, em vez de contínuos
+24.   Evitar excesso de links:  Páginas de texto que contenham uma grande proporção de links devem
+
+ser formatadas de modo que a presença dos links não prejudique a legibilidade do  texto.
+25. Uso de terminologia familiar para links de navegação: Os links de navegação — especialmente  os que representam a estrutura principal de navegação — devem ser rotulados com termos  que sejam familiares ao usuário, com base em seu conhecimento geral, experiência prévia  no domínio da aplicação ou experiência no uso de outros sistemas.
+26. Uso de rótulos descritivos para links: O destino ou a finalidade de um link deve ser diretamente  indicado por seu rótulo, evitando-se rótulos genéricos como “ir” ou “clique aqui”, exceto  quando a finalidade do link for clara a partir do contexto da página ou quando os rótulos  possuírem semântica comumente compreendida no domínio específico da aplicação. O uso de terminologia apropriada, específica para as tarefas e necessidades de informação do usuário, é importante para tornar o conteúdo fácil de entender.
+27.   Identificação de links que abrem novas janelas: Links que abrem novas janelas do navegador ou  janelas pop-up devem ser claramente identificados.
+28. Distinção entre links de navegação e controles: Os links de navegação devem ser claramente  distinguíveis dos controles que ativam alguma ação.  Tipos típicos de ação em interfaces de usuário incluem a manipulação de dados do aplicativo, a realização de pesquisas, ações de comunicação — como abrir uma nova janela de e-mail ou iniciar uma função de bate-papo — e ações relacionadas à apresentação, como classificar uma lista de resultados de pesquisa.
+29. Fornecimento de versões imprimíveis de documentos: Se um documento for muito longo, estiver distribuído por várias páginas ou tiver um layout específico que não seja adequado para leitura on-line, deve-se fornecer uma versão do documento otimizada para impressão, que imprima o conteúdo de forma aceitável para o usuário (por exemplo, no layout, formato de papel ou orientação esperados).
+30. Uso do “espaço em branco”:  O “espaço em branco” em uma página, ou seja, o espaço preenchido apenas com a  cor de fundo, deve ser utilizado de forma a não prejudicar a leitura rápida  da página. Embora o espaço em branco seja um meio importante de organizar visualmente os diferentes elementos de conteúdo em uma página, se a distância entre os blocos de informação exibidos se tornar muito grande, a leitura rápida da página pode ser dificultada.
+31. Seleção do comprimento adequado das páginas: O comprimento de uma página deve ser selecionado de forma a apoiar o objetivo principal e o uso da página. Páginas curtas são geralmente mais adequadas para páginas iniciais, páginas de navegação ou páginas de visão geral que precisam ser lidas rapidamente. Páginas mais longas podem ser mais adequadas quando os usuários desejam ler o conteúdo sem interrupções ou quando a página precisa corresponder a uma versão impressa.
+32. Uso da cor: A cor deve ser usada com cuidado, levando em conta as capacidades e limitações humanas na percepção da cor, e não como o único meio de transmitir informações. A cor nunca deve ser o único meio de codificação. Alguns usuários podem ter dificuldades em perceber certas cores ou combinações de cores (daltonismo).
+33. Uso cuidadoso de frames: Se forem utilizados frames, deve-se tomar cuidado para evitar possíveis problemas, por exemplo, aqueles envolvendo o uso do botão “Voltar”, a criação de marcadores de páginas ou a rolagem de informações. Quando forem utilizados frames, é importante dar um título a cada um deles e descrever sua finalidade e como os frames se relacionam entre si.
+34. Oferecer alternativas à apresentação baseada em frames: Se forem utilizados frames, deve-se oferecer uma forma alternativa de apresentar as informações relevantes sem o uso de frames. Oferecer páginas alternativas apenas com texto: Quando as folhas de estilo e/ou os frames estiverem desativados, deve ser possível ao usuário ler e compreender a página;  alternativamente, deve-se fornecer ao usuário uma página equivalente apenas com texto.
+35. Layout consistente das páginas: As páginas devem ser projetadas utilizando esquemas de layout consistentes, ajudando o usuário a encontrar informações semelhantes na mesma posição em páginas diferentes. Esquemas de layout gerais se aplicam a todas as páginas e são preferíveis quando todas as páginas têm uma estrutura semelhante. Frequentemente, porém, páginas diferentes têm finalidades e tipos de conteúdo distintos. Nesses casos, as páginas geralmente podem ser agrupadas em categorias diferentes, utilizando um esquema de layout para cada categoria de maneira consistente.
+36.   Posicionamento consistente das informações do título: Os títulos das páginas devem ser posicionados em um local consistente nas diferentes páginas.
+37. Observância dos princípios da percepção humana Ao projetar páginas de aplicativos, os princípios gerais da percepção humana devem ser levados em consideração. As Normas Internacionais mencionadas abaixo devem ser consultadas para orientação. Orientações práticas para a apresentação de informações ao usuário podem ser encontradas na ISO 9241-12. Orientações sobre a seleção e o uso de diferentes formas de técnicas de interação podem ser encontradas nas normas ISO 9241-14 a ISO 9241-17. A norma ISO 9241-14 fornece orientações sobre menus, a ISO 9241-15 sobre caixas de diálogo de comando, a ISO 9241-16 sobre manipulação direta e a ISO 9241-17 sobre formulários. Além disso, ao projetar apresentações de informações multimídia, os princípios de design e as recomendações descritas nas normas ISO 14915-1 a ISO 14915-3 devem ser levados em consideração. A apresentação adequada do conteúdo também desempenha um papel fundamental na acessibilidade.
+38.   Links de retorno à página inicial ou a páginas de referência: Cada página deve conter um  link que leve à página inicial do aplicativo ou a uma página de referência que seja fácil  de reconhecer pelo usuário.
+39.   Fornecimento de um mapa do site: Uma visão geral da navegação separada, como um mapa do site, deve ser  fornecida para o aplicativo, mostrando a estrutura do site de forma resumida.
+40.   Consistência entre componentes de navegação e conteúdo: Se os componentes de navegação (ou visões gerais) forem exibidos em conjunto com o conteúdo associado, deve-se manter a consistência entre o componente de navegação e o conteúdo exibido, indicando no componente de navegação (por exemplo, com destaque) o tópico atualmente visível na área de conteúdo.
+41.   Posicionamento consistente dos componentes de navegação: Os componentes de navegação devem ser posicionados de maneira consistente nas páginas ou nos conjuntos de frames das páginas do aplicativo.
+42. Individualização e adaptação ao usuário: Adaptar o conteúdo e a navegação de uma interface de usuário a usuários individuais ou grupos de usuários pode ser um mecanismo útil para fornecer informações que sejam do interesse dos usuários e para tornar o acesso a informações relevantes mais eficiente. A adaptação ao usuário também pode ser importante para tornar a interface de usuário mais acessível. Diferentes abordagens podem ser utilizadas para atingir esses objetivos, como fornecer aos usuários meios para personalizar a interface de acordo com suas necessidades pessoais — ou seja, individualização —; projetar o conteúdo e a navegação de maneira diferente para diversos grupos ou funções de usuários — por exemplo, funcionários de diferentes níveis, cidadãos etc., monitorar o comportamento do usuário e adaptar-se aos objetivos do usuário inferidos a partir do comportamento observado, recomendar informações potencialmente mais relevantes ou interessantes para um usuário específico, com base no comportamento de todos os usuários ou de um grupo de usuários.
+43.   Levar em consideração as tarefas e as necessidades de informação dos usuários: Ao fornecer  diferentes caminhos de acesso ou estruturas de navegação para diferentes grupos de usuários, as tarefas  e as necessidades de informação desses grupos devem ser levadas em consideração.
+44.   Tornar evidentes a individualização e a adaptação: Deve ficar evidente para o usuário quando a individualização e/ou a adaptação são utilizadas.
+45. Tornar evidentes os perfis de usuário: Se forem utilizados perfis de usuário predefinidos ou especificados pelo usuário para individualizar ou adaptar o conteúdo, o perfil atualmente em uso deve ser destacado. Se forem utilizados perfis, é importante fornecer aos usuários informações sobre esse conceito e suas implicações.
+46.   Permitir que os usuários visualizem e alterem perfis: Se forem utilizados perfis especificados pelo usuário, os usuários devem poder visualizar, modificar e excluir esse perfil quando desejarem.
+47.   As interfaces de usuário do sistema devem seguir as diretrizes especificadas em  www.usability.gov Disponibilidade do sistema
+1. O sistema deve estar disponível para os usuários:
+
+• das <xx:00> às <xx:00>;
+
+• em <todos os dias úteis/xxx dias por ano>.
+2.   O tempo de inatividade planejado para o sistema não deve exceder <xx> horas por <período contínuo de três meses>.
+
+Considera-se que o sistema está inoperante se qualquer usuário não conseguir executar qualquer função normal do sistema e se essa falha for atribuída a qualquer componente do sistema que não seja a estação de trabalho.
+3.   O tempo de inatividade não planejado do Sistema não deve exceder <xx horas/minutos> por <período contínuo de três meses>.
+4.   O número de incidentes de tempo de inatividade não planejado do Sistema não deve exceder <x> por <período contínuo de três meses>.
+5.   Em caso de qualquer falha de software ou hardware, deve ser possível restaurar o Sistema (com sincronização em linha) em no máximo <xx> horas.
+
+Desempenho e Escalabilidade
+1.   O Sistema deve fornecer tempos de resposta adequados para funções comumente executadas, tanto em condições normais quanto em picos de demanda
+2. O Sistema deve ser capaz de realizar uma pesquisa simples em 5 a 8 segundos e uma pesquisa avançada (múltiplos critérios de pesquisa) em 10 a 15 segundos, independentemente da capacidade de armazenamento ou do número de casos no sistema. Nesse contexto, realizar uma pesquisa significa retornar uma lista de resultados.  Isso não inclui a recuperação dos próprios registros.
+3. O sistema deve ser capaz de recuperar e exibir, em 5 a 8 segundos, o caso que tenha sido acessado nos últimos 2 meses, independentemente da capacidade de armazenamento ou do número de casos no sistema. Esse requisito tem como objetivo permitir a rápida recuperação de casos usados com frequência, partindo do princípio de que a frequência de uso está normalmente correlacionada com o uso recente.
+4. O sistema deve ser capaz de recuperar e exibir, em até 20 segundos, o caso que não tenha sido acessado nos últimos 2 meses, independentemente da capacidade de armazenamento ou do número de casos no sistema. Esse requisito visa permitir que casos utilizados com pouca frequência sejam armazenados em mídias mais lentas do que os registros mais ativos.
+5. O sistema deve ser escalável e não deve possuir nenhum recurso que impeça seu uso em delegacias de polícia de pequeno ou grande porte, com números variáveis de casos tratados.
+5. RECOMENDAÇÕES DE ARQUITETURA FUNCIONAL A arquitetura funcional proposta é modelada em torno de uma implantação centralizada para facilitar
+
+a facilidade de manutenção e aproveitar os avanços em padrões abertos e tecnologias da web.
+
+Os 3 Cs (Núcleo-Configuração-Personalização) constituem o princípio orientador da arquitetura. A arquitetura funcional da solução CCTNS é apresentada na figura abaixo.
+
+A arquitetura funcional é composta por 4 componentes principais baseados nos princípios da SOA.
+
+Cada um dos componentes contém vários serviços, conforme definido pela Definição de Serviço. Os serviços centrais, a camada de suporte e os componentes de segurança e controle de acesso podem ser implantados como
+
+componentes padrão com as alterações de configuração necessárias. A camada de personalização pode substituir e complementar os serviços centrais com base nos requisitos específicos do estado e pode ser
+
+integrada aos serviços centrais.
+
+Visão Geral da Arquitetura Funcional do CCTNS A implantação do aplicativo será realizada em nível estadual e será configurada e
+
+personalizada de acordo com as extensões específicas de cada estado.
+
+Os sistemas devem ser projetados seguindo as seguintes diretrizes gerais:
+
+Funcionalidade do Sistema 1) O sistema deve oferecer suporte a uma interface multilíngue
+
+2)  O sistema deve ser projetado de forma que os dados operacionais não sejam perdidos em caso de falha de equipamento ou da rede de comunicação.
+3) O sistema deve funcionar mesmo no modo offline com as funcionalidades essenciais 4)  O sistema deve ser projetado para apresentar desempenho satisfatório mesmo em delegacias
+
+conectadas com baixa largura de banda 5)  O sistema deve ser implementado utilizando Arquitetura Orientada a Serviços (SOA) e ter um
+
+projeto modular 6) O sistema deve ser desenvolvido com base em padrões abertos
+
+7)  O sistema deve ser construído sobre um Serviço Comum de Acesso e Autenticação de Usuários para garantir o logon único (Single-Sign-On) para o usuário final
+
+8) O sistema deve ser desenvolvido para implantação e manutenção centralizadas 9) O sistema deve ser desenvolvido para ser implantado em uma arquitetura de data center de três camadas
+
+10)  O sistema deve ser projetado para ter uma arquitetura de n camadas, com a lógica de apresentação separada da lógica de negócios, que, por sua vez, está separada da lógica de acesso aos dados
+
+11)  O sistema deve ser extensível para fornecer acesso às interfaces por meio de PDAs e terminais móveis de dados
+
+12) O sistema deve adotar formatos padronizados e elementos comuns de metadados 13)  O sistema deve ser projetado para acesso por meio de sistemas baseados em navegador e deve
+
+impor requisitos mínimos ao dispositivo cliente 14) O sistema deve oferecer suporte a vários tipos de serviços de comunicação para acesso remoto
+
+15)  O sistema deve ter capacidade para oferecer acesso público a um subconjunto de dados e funcionalidades
+
+16) O sistema deve oferecer suporte à autenticação em várias camadas, quando necessário 17) O sistema deve oferecer suporte a conexões criptografadas por SSL
+
+18) O sistema deve suportar conexões seguras de rede privada virtual (VPN) 19)  O sistema deve utilizar HTTPS como protocolo de comunicação, ou seja, HTTP sobre uma
+
+camada de soquete seguro (SSL) criptografada
+
+20) O sistema deve funcionar em vários navegadores 21) O sistema deve suportar a criptografia seletiva dos dados armazenados
+
+22)  O sistema deve garantir a transmissão segura de dados pela rede e utilizar SSL e assinaturas digitais bidirecionais
+
+23) O sistema deve garantir altos padrões de segurança e controle de acesso por meio de:
+
+a) Prevenção de cross-site scripting b) Validação dos dados recebidos / solicitações do usuário
+
+c) Codificar os dados recebidos/solicitações do usuário d) Impedir injeção de SQL
+
+e) Utilizar consultas parametrizadas f) Sanitizar as entradas do usuário
+
+g) Validar os dados tanto no cliente quanto no servidor h) Não permitir a exclusão definitiva e realizar apenas a marcação provisória da linha para exclusão
+
+24) O sistema deve garantir alta escalabilidade e desempenho por meio de:
+
+a) Uso de cache para armazenar dados frequentes b) Uso de tecnologia baseada em AJAX para melhorar a experiência do usuário. O carregamento agressivo de páginas deve
+
+ser considerado com base na tela e no padrão de uso estimado c) Aproveitar os recursos de soquete HTTP assíncrono do servidor web para escalabilidade e
+
+desempenho d) Hospedar todo o conteúdo estático (documentos, imagens) no servidor web
+
+e) Os resultados da pesquisa devem ser buscados do banco de dados em lotes de no máximo 10 ou 20, conforme configurado na aplicação
+
+f) Exibição de registros na tela em lotes/paginados g) A pesquisa deve buscar apenas os campos que precisam ser exibidos ao usuário. Somente quando
+
+o usuário clicar em um determinado registro para visualizar seus detalhes adicionais é que uma consulta deve ser disparada para buscar os detalhes adicionais exclusivamente para esse registro específico
+
+h) Um cache hierárquico deve ser configurado e utilizado para armazenar em cache os resultados das pesquisas mais frequentes
+
+i) Índices de banco de dados devem ser aplicados nas colunas-chave utilizadas para a pesquisa
