@@ -1,4 +1,4 @@
-# Projeto de Agente Autônomo para Extração e Contagem de Pontos de Função (IFPUG CPM 4.3.1)
+# Projeto de Agente Autônomo para Extração e Contagem de Pontos de Função Estimativa NESMA
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/victro666/agente-extrator-CFBs-APF/blob/main/AgenteIA_APF_estimativa_NESMA.ipynb)
 ![Python](https://img.shields.io/badge/Python-3.10%2B-blue)
