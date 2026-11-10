@@ -5,7 +5,7 @@
 ![LLM](https://img.shields.io/badge/LLM-Qwen2.5--7B--Instruct-purple)
 ![IFPUG](https://img.shields.io/badge/M%C3%A9tricas-IFPUG%20CPM%204.3.1-green)
 
-Versão aprimorada do meu projeto de TCC em Ciência da Computação para automatização da identificação, classificação e estimativa de Componentes Funcionais Básicos (**EE, SE, CE, ALI e AIE**) a partir de documentos de especificação de requisitos de software (`.pdf` e `.txt`), rodando **100% localmente / on-premise**, para medição de tamanho funcional de software.
+Versão aprimorada do meu projeto de TCC em Ciência da Computação para automatização da identificação, classificação e estimativa de Componentes Funcionais Básicos (**EE, SE, CE, ALI e AIE**) a partir de documentos de especificação de requisitos de software (`.pdf` e `.txt`), utilizando modelos de linguagem pré-treinados baseados na arquitetura transformer rodando **100% localmente / on-premise**, para medição de tamanho funcional.
 
 ---
 
