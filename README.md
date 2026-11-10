@@ -2,8 +2,10 @@
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/victro666/agente-extrator-CFBs-APF/blob/main/AgenteIA_APF_estimativa_NESMA.ipynb)
 ![Python](https://img.shields.io/badge/Python-3.10%2B-blue)
+![NLP](https://img.shields.io/badge/PLN-NLP4RE-red)
 ![LLM](https://img.shields.io/badge/LLM-Qwen2.5--7B--Instruct-purple)
 ![IFPUG](https://img.shields.io/badge/M%C3%A9tricas-IFPUG%20CPM%204.3.1-green)
+![NESMA](https://img.shields.io/badge/M%C3%A9tricas-Estimativa%20NESMA-orange)
 
 Versão aprimorada do meu projeto de TCC em Ciência da Computação para automatização da identificação, classificação e estimativa de Componentes Funcionais Básicos (**EE, SE, CE, ALI e AIE**) a partir de documentos de especificação de requisitos de software (`.pdf` e `.txt`), utilizando modelos de linguagem pré-treinados baseados na arquitetura transformer rodando **100% localmente / on-premise**, para medição de tamanho funcional.
 
